@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_black"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    >
+    <EditText
+        android:id="@+id/tv_task_input"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Enter Task"
+        android:layout_margin="10dp"
+        android:maxLines="2"
+        android:gravity="start"
+        android:textAlignment="textStart"
+        />
+    <EditText
+        android:id="@+id/tv_time_input"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Enter Task time format hh:mm:aa"
+        android:layout_margin="10dp"
+        android:gravity="start"
+        android:textAlignment="textStart"
+
+        />
+    <Button
+        android:id="@+id/btn-save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_btn"
+        />
+
+</LinearLayout>
