@@ -37,6 +37,10 @@ class MainActivity : AppCompatActivity() {
             adapter!!.insertAndRefresh(it!!)
         })
 
+        fab_deleteAll.setOnClickListener{
+            vm!!.deleteAll()
+        }
+
 
         //setting up fab onclick for input
         fab_add_task.setOnClickListener{
@@ -47,7 +51,6 @@ class MainActivity : AppCompatActivity() {
             dialog.show()
             view.btn_save.setOnClickListener{_->
                 var task = view.tv_task_input.text.toString()
-                var time = view.tv_task_input.tv_time_input
                 vm!!.insert(Task(task, System.currentTimeMillis()))
                 dialog.dismiss()
 

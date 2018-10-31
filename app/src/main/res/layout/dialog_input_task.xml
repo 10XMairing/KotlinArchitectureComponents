@@ -16,7 +16,7 @@
         android:gravity="start"
         android:textAlignment="textStart"
         />
-    <EditText
+    <!--<EditText
         android:id="@+id/tv_time_input"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -25,7 +25,7 @@
         android:gravity="start"
         android:textAlignment="textStart"
 
-        />
+        />-->
     <Button
         android:id="@+id/btn-save"
         android:layout_width="wrap_content"
